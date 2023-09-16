@@ -1,0 +1,67 @@
+/* additional features (general scope) */
+
+/* different width cssClasses */
+/*:root {
+	--width-v11: 52rem;
+}*/
+
+/* normal (readable line length) */
+.markdown-source-view, 
+.markdown-source-view .cm-sizer,
+.markdown-preview-view.is-readable-line-width .markdown-preview-sizer {
+	--file-line-width: var(--width-v11, 55rem)
+}
+
+/* "wide" css class */
+.markdown-preview-view.wide,
+.markdown-preview-view.wide .markdown-preview-sizer,
+.markdown-source-view.wide,
+.markdown-source-view.wide .cm-sizer {
+    --line-width-adaptive: 60rem;
+	--file-line-width: 60rem !important;
+}
+/* .markdown-preview-view.wide .markdown-preview-sizer { --content-max-width: 60rem; } */
+
+/* "max" cssClass. uniform display/edit width */
+/* don't enable it by default in editing mode. */
+.markdown-preview-view.max,
+.markdown-preview-view.max .markdown-preview-sizer,
+.markdown-source-view.max/*,.markdown-source-view.max .cm-sizer*/
+.markdown-source-view.max-edit, .markdown-source-view.max-edit .cm-sizer { /* max-edit cssclass */
+    --line-width-adaptive: 300em;
+    --line-width-wide: 300em;
+	--file-line-width: 300em !important;
+}
+/* .markdown-preview-view.max .markdown-preview-sizer { --content-max-width: 300rem; } */
+
+/* cssClass for tables with tags */
+.table-last-tags :is(.dataview, .table-view-table) {
+	--tag-col-width: 6rem;
+}
+.table-last-tags :is(.dataview, .table-view-table) tbody tr > td:last-child {
+	width: var(--tag-col-width);
+	min-width: var(--tag-col-width);
+	max-width: var(--tag-col-width);
+	white-space: nowrap;
+	text-overflow: clip;
+	overflow-y: hidden;
+	overflow-x: auto;
+}
+
+/* table-fw - fullwidth. force even small tables to be full-width */
+.markdown-preview-view.table-fw .el-table > table {
+	width: 100%;
+}
+
+/* table-noborder, like in minimal */
+.markdown-preview-view.table-noborder {
+	--table-header-border-width: 0;
+	--table-column-first-border-width: 0;
+	--table-column-last-border-width: 0;
+	--table-row-last-border-width: 0;
+}
+
+/* dataview-noscroll - reduces margin around dv tables. use only if they are not scrolling*/
+.markdown-preview-view.dv-noscroll .block-language-dataview {
+	overflow-y: initial
+}

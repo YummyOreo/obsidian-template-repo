@@ -1,0 +1,67 @@
+/* this snippet tweaks various obsidian styles to my liking */
+
+/* any general obsidian tweaks simple enough that they don't need their own file */
+:root, body, html {
+	/* yeet shadows */
+	--input-shadow: none !important;
+    --input-shadow-hover: none !important;
+    --shadow-s: none !important;
+    --shadow-l: none !important;
+	--popover-shadow: none !important;
+	--btn-shadow-color: transparent !important;
+
+	/* hide stuff after link is clicked */
+	--text-highlight-bg: transparent;
+	--text-highlight-bg-active: transparent;
+}
+
+.search-result-file-matched-text {
+	--text-highlight-bg: rgba(255, 177, 80, 0.3);
+}
+
+/* canvas label resizing animation */
+.canvas-node-label { transition-duration: 200ms !important; }
+
+/* kbd element */
+kbd { border-radius: 6px; }
+.theme-light kbd {
+	border: 1px solid #3b3c3e1e;
+	box-shadow: inset 0 -1px 0 #3b3c3e1e;
+}
+.theme-dark kbd {
+	border: 1px solid #3b3c3e59;
+	box-shadow: inset 0 -1px 0 #3b3c3e59;
+}
+
+/* code */
+code[class*="language-"] { display: inline; }
+pre > code[class*="language-"] { display: block }
+
+/* tree view: remove egregious padding & un-round*/
+body {
+	/* change this to 0 for full shimmering-focus mode */
+	--s-atom: var(--size-4-1);
+	--snippet-tree-view-padding-bottom: var(--s-atom) var(--s-atom) var(--size-4-6) var(--s-atom);
+	--snippet-tree-view-padding: var(--s-atom);
+	--snippet-tree-item-padding-small: var(--size-4-1);
+	--snippet-tree-item-border-radius: 0;
+}
+.nav-files-container {
+	padding: var(--snippet-tree-view-padding-bottom);
+}
+.workspace-leaf-content[data-type=bookmarks] .view-content,
+.backlink-pane, .outgoing-link-pane,
+.tag-container,
+.outline {
+	padding: var(--snippet-tree-view-padding);
+}
+
+.tag-container .tree-item-self {
+	padding-left: var(--snippet-tree-item-padding-small);
+}
+/* un-round */
+/* .tree-item, .tree-item-self,
+.workspace-leaf.mod-active .tree-item-self.has-focus {
+	border-radius: var(--snippet-tree-item-border-radius);
+} */
+.nav-file-title { margin-bottom: 0; }

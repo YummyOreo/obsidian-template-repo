@@ -1,0 +1,95 @@
+body /*.clean-embed*/ {
+    --embed-background: inherit;
+    --embed-border-left: 0px solid var(--interactive-accent);
+    --embed-border-right: none;
+    --embed-border-top: none;
+    --embed-border-bottom: none;
+    --embed-padding: 0 0 0 0;
+    --embed-font-style: inherit;
+
+	--embed-floating-offset: 0.25rem;
+	--true-embed-icon-size: 24px;
+}
+
+/*.clean-embed*/ .markdown-embed {
+	max-width: 100%;
+	/* border-radius: var(--radius-s); */
+}
+.markdown-embed { white-space: normal; }
+
+/* .clean-embed .markdown-embed:hover { background: var(--background-secondary); } */
+
+/* hide title and link unless hovered. */
+/*.clean-embed*/ .markdown-embed .markdown-embed-title,
+/*.clean-embed*/ .markdown-embed .markdown-embed-link {
+	background: var(--background-primary);
+	visibility: hidden;
+
+	position: absolute;
+	top: var(--embed-floating-offset, 0);
+	z-index: 3;
+
+	margin: 0 var(--size-4-6) 0 var(--size-4-6);
+	right: 0;
+}
+/*.clean-embed*/ .markdown-embed .markdown-embed-link:hover { background: var(--background-modifier-hover); }
+
+/*.clean-embed*/ .markdown-embed .markdown-embed-title {
+	--embed-icon-size: calc((var(--true-embed-icon-size, 24px) - var(--size-4-6)) + var(--embed-floating-offset, var(--size-4-6))) ;
+	width: min-content;
+	padding: 0 0.3rem 0 0.3rem;
+	left: unset;
+	right: calc(var(--embed-icon-size) + var(--embed-floating-offset));
+
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+
+	max-width: calc(var(--file-line-width) - var(--embed-icon-size) - var(--list-indent));
+	border-radius: var(--radius-s);
+	height: var(--true-embed-icon-size);
+	line-height: var(--true-embed-icon-size);
+}
+/*.clean-embed*/ .markdown-embed .markdown-embed-link {
+	margin-right: var(--embed-floating-offset, var(--size-4-6));
+	margin-left: var(--embed-floating-offset, var(--size-4-6));
+
+	width: var(--true-embed-icon-size, 24px) !important;
+	height: var(--true-embed-icon-size, 24px) !important;
+}
+
+/* show link and title on hover */
+/*.clean-embed*/ .markdown-embed:hover .markdown-embed-title,
+/*.clean-embed*/ .markdown-embed:hover .markdown-embed-link { visibility: visible; }
+
+/* fixes */
+
+/* top level ul's in live preview should not be indented (live preview) */
+/* i commented this out because in # Slovenská Medzivojnová Poézia it was causing rudolf fabry's bullet points to not appear (level 2 embed) */
+/* .markdown-source-view.is-live-preview .markdown-embed .markdown-embed-content .markdown-preview-sizer > div.el-ul > ul {
+	padding-inline-start: 0px;
+} */
+
+/* fix content taking up more space than needed */
+/* the last paragraph in a div.el-p has some bottom margin, even though it's not visible from the parent */
+
+/*.clean-embed*/
+.markdown-embed-content >
+.markdown-preview-view.markdown-rendered > 
+.markdown-preview-sizer div.el-p >
+p:last-child {
+	margin-bottom: 0;
+}
+
+
+/* direct p child of embed should not have padding if it has a h1 (reading mode)*/
+/*.clean-embed*/ .markdown-reading-view .el-embed-page > p {
+	margin-top: 0;
+	margin-bottom: 0;
+}
+@media print {
+	.el-embed-page > p {
+		margin-top: 0;
+		margin-bottom: 0;
+	}
+}

@@ -1,0 +1,32 @@
+{
+  "items": [
+    {
+      "type": "file",
+      "ctime": 1689028045200,
+      "path": "Index.md",
+      "title": "Main Index"
+    },
+    {
+      "type": "group",
+      "ctime": 1689425989548,
+      "items": [
+        {
+          "type": "file",
+          "ctime": 1689425977589,
+          "path": "Index.md"
+        }
+      ],
+      "title": "Index Tab"
+    },
+    {
+      "type": "folder",
+      "ctime": 1689982312457,
+      "path": "Indexes"
+    },
+    {
+      "type": "file",
+      "ctime": 1692312432471,
+      "path": "Indexes/School Index.md"
+    }
+  ]
+}

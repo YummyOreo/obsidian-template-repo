@@ -1,0 +1,25 @@
+{
+  "accentColor": "#fe8019",
+  "cssTheme": "AnuPpuccin",
+  "translucency": false,
+  "baseFontSize": 16,
+  "theme": "obsidian",
+  "monospaceFontFamily": "Monoid NFM",
+  "textFontFamily": "Rubik",
+  "interfaceFontFamily": "Overpass",
+  "enabledCssSnippets": [
+    "custom-admonitions.75bd18",
+    "MCL Wide Views",
+    "headings",
+    "banner fix",
+    "MainMCL_Multi_Column",
+    "[fixes] plugins",
+    "[fixes] general",
+    "[feat] clean embeds",
+    "[tweaks] aesthetics",
+    "[tweaks] additions",
+    "cards"
+  ],
+  "nativeMenus": false,
+  "showViewHeader": true
+}

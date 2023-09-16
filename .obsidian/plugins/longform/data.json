@@ -1,0 +1,217 @@
+{
+  "version": 3,
+  "projects": {},
+  "selectedDraftVaultPath": "Blogs & Writings/A review of allergies/Index.md",
+  "userScriptFolder": null,
+  "sessionStorage": "data",
+  "sessions": [
+    {
+      "start": "2023-09-16T11:17:05.498Z",
+      "total": 0,
+      "drafts": {
+        "Blogs & Writings/A review of allergies/Index.md": {
+          "total": 0,
+          "scenes": {
+            "Abstract": 0
+          }
+        }
+      }
+    },
+    {
+      "start": "2023-09-15T20:36:23.898Z",
+      "total": 0,
+      "drafts": {
+        "Blogs & Writings/A review of allergies/Index.md": {
+          "total": 0,
+          "scenes": {
+            "Abstract": 0
+          }
+        }
+      }
+    },
+    {
+      "start": "2023-09-14T23:11:20.696Z",
+      "total": 0,
+      "drafts": {
+        "Blogs & Writings/A review of allergies/Index.md": {
+          "total": 0,
+          "scenes": {
+            "Abstract": 0
+          }
+        }
+      }
+    },
+    {
+      "start": "2023-09-13T17:47:47.079Z",
+      "total": 0,
+      "drafts": {
+        "Blogs & Writings/A review of allergies/Index.md": {
+          "total": 0,
+          "scenes": {
+            "Abstract": 0
+          }
+        }
+      }
+    },
+    {
+      "start": "2023-09-12T21:20:24.902Z",
+      "total": 0,
+      "drafts": {
+        "Blogs & Writings/A review of allergies/Index.md": {
+          "total": 0,
+          "scenes": {
+            "Abstract": 0
+          }
+        }
+      }
+    },
+    {
+      "start": "2023-09-11T20:30:06.152Z",
+      "total": 0,
+      "drafts": {
+        "Blogs & Writings/A review of allergies/Index.md": {
+          "total": 0,
+          "scenes": {
+            "Abstract": 0
+          }
+        }
+      }
+    },
+    {
+      "start": "2023-09-10T12:58:54.997Z",
+      "total": 0,
+      "drafts": {
+        "Blogs & Writings/A review of allergies/Index.md": {
+          "total": 0,
+          "scenes": {
+            "Abstract": 0
+          }
+        }
+      }
+    },
+    {
+      "start": "2023-09-09T13:01:33.506Z",
+      "total": 0,
+      "drafts": {
+        "Blogs & Writings/A review of allergies/Index.md": {
+          "total": 0,
+          "scenes": {
+            "Abstract": 0
+          }
+        }
+      }
+    },
+    {
+      "start": "2023-09-08T20:40:08.970Z",
+      "total": 0,
+      "drafts": {
+        "Blogs & Writings/A review of allergies/Index.md": {
+          "total": 0,
+          "scenes": {
+            "Abstract": 0
+          }
+        }
+      }
+    },
+    {
+      "start": "2023-09-07T20:40:53.763Z",
+      "total": 0,
+      "drafts": {
+        "Blogs & Slides/A review of allergies/Index.md": {
+          "total": 0,
+          "scenes": {}
+        },
+        "Blogs & Writings/A review of allergies/Index.md": {
+          "total": 0,
+          "scenes": {
+            "Abstract": 0
+          }
+        }
+      }
+    },
+    {
+      "start": "2023-09-06T11:35:33.289Z",
+      "total": 0,
+      "drafts": {
+        "Blogs & Slides/A review of allergies/Index.md": {
+          "total": 0,
+          "scenes": {
+            "Abstract": 0
+          }
+        }
+      }
+    },
+    {
+      "start": "2023-09-05T20:35:20.502Z",
+      "total": 0,
+      "drafts": {
+        "Blogs & Slides/A review of allergies/Index.md": {
+          "total": 0,
+          "scenes": {
+            "Abstract": 0
+          }
+        }
+      }
+    },
+    {
+      "start": "2023-09-05T00:55:47.577Z",
+      "total": 0,
+      "drafts": {
+        "Blogs & Slides/A review of allergies/Index.md": {
+          "total": 0,
+          "scenes": {
+            "Abstract": 0
+          }
+        }
+      }
+    }
+  ],
+  "showWordCountInStatusBar": true,
+  "startNewSessionEachDay": true,
+  "sessionGoal": 500,
+  "applyGoalTo": "all",
+  "notifyOnGoal": true,
+  "countDeletionsForGoal": false,
+  "keepSessionCount": 30,
+  "sessionFile": "longform-sessions.json",
+  "numberScenes": true,
+  "workflows": {
+    "Default Workflow": {
+      "name": "Default Workflow",
+      "description": "A starter workflow. Feel free to edit, rename, or delete it and create your own.",
+      "steps": [
+        {
+          "id": "strip-frontmatter",
+          "optionValues": {}
+        },
+        {
+          "id": "remove-links",
+          "optionValues": {
+            "remove-wikilinks": true,
+            "remove-external-links": true
+          }
+        },
+        {
+          "id": "prepend-title",
+          "optionValues": {
+            "format": "$3{#} $1",
+            "separator": "\n\n"
+          }
+        },
+        {
+          "id": "concatenate-text",
+          "optionValues": {
+            "separator": "\\n\\n---\\n\\n"
+          }
+        },
+        {
+          "id": "write-to-note",
+          "optionValues": {
+            "target": "manuscript.md",
+            "open-after": true
+          }
+        }
+      ]
+    }
+  }
+}

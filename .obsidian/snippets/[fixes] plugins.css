@@ -1,0 +1,132 @@
+/* file for any tweaks made regarding plugins */
+
+/* quick switcher */
+/* quick switcher text underline offset (fallback - works in prism) */
+.suggestion-item .qsp-title {
+	text-underline-offset: 2px;
+	text-decoration-skip-ink: auto;
+}
+
+/* suggestion prefix inspired by prism, modified by KraXen */
+
+/* .suggestion-prefix {
+    padding: 0px var(--size-4-1);
+    margin-right: var(--size-4-2);
+    font-size: 0.9em;
+    font-weight: 600;
+    color: var(--code-normal);
+    background-color: var(--code-background);
+    border: 1px solid var(--code-normal);
+    border-radius: var(--radius-s);
+}
+.suggestion-prefix {
+    font-size: var(--font-ui-smaller);
+    font-family: var(--font-interface);
+}
+.suggestion-prefix::after { display: none; } */
+
+/* advanced tables */
+/* the plugin dev updated the styles to match the original snippet */
+.advanced-tables-row-label {
+	text-transform: lowercase;
+	color: var(--nav-item-color, white);
+	font-size: var(--nav-item-size);
+	width: 40px;
+}
+.advanced-tables-buttons .nav-header { padding: 4px 0; }
+.advanced-tables-button:hover svg { fill: var(--text-normal); }
+
+/* KANBAN */
+/* todo add this as a style setting as it might be a bit visually heavy */
+.kanban-plugin__board {
+	background-image: radial-gradient(circle,
+		var(--dot-color) var(--dot-size),
+		transparent var(--dot-size)
+	);
+	background-size: var(--dot-spacing) var(--dot-spacing);
+    background-attachment: local;
+}
+/*  small dots or big dots: uncomment 1 */
+/* small dots */
+.kanban-plugin__board { 
+	--dot-color: hsla(0, 0%, 35%, 22.5%);
+    --dot-spacing: 10px; 
+    --dot-size: 1px;
+}
+/* big dots */
+/* .kanban-plugin__board { 
+	--dot-color: hsla(0, 0%, 35%, 15%);
+    --dot-spacing: 12px; 
+    --dot-size: 2px;
+} */
+
+
+/* kanban checkboxes */
+.kanban-plugin .contains-task-list .task-list-item-checkbox {
+	width: var(--checkbox-size);
+	height: var(--checkbox-size);
+}
+
+/* TODO review these */
+/* fix kanban checkboxes on default theme (same css as prism does) */
+ul > li.task-list-item .task-list-item-checkbox {
+    margin-inline-start: calc(var(--checkbox-size) * -1.2);
+}
+/* fix bullet lists in cards */
+.kanban-plugin__markdown-preview-view ul,
+.kanban-plugin__markdown-preview-view ol {
+	padding-inline-start: 25px;
+}
+
+/* don't center checkbox by margin, rather do it by flex */
+/* this gets rid of 1-line kanban cards being unnecessarily tall */
+.kanban-plugin__item-prefix-button-wrapper {
+	height: 100%;
+	display: flex;
+	align-items: center;
+}
+.kanban-plugin__item-prefix-button-wrapper input.task-list-item-checkbox {
+	margin-top: 2px;
+	margin-bottom: 2px;
+	/* force kanban checkboxes to be the same size as normal checkboxes */
+	width: var(--checkbox-size);
+	height: var(--checkbox-size);
+	filter: none; /* remove hue-rotate filter from kanban checkboxes */
+}
+/* fix tags in one-line kanban cards creating scrollbars because they're too tall */
+body:not(.prism-theme) .kanban-plugin__item-content-wrapper a.tag {
+	line-height: 1;
+	height: 18px;
+	display: inline-block;
+}
+
+/* tweak buttons */
+.kanban-plugin__item button.kanban-plugin__item-postfix-button { height: min-content; }
+.kanban-plugin__item button.kanban-plugin__item-postfix-button:hover { background-color: var(--background-modifier-hover) !important; }
+
+/* kanban placeholder */
+body .kanban-plugin__lane-items>.kanban-plugin__placeholder:only-child {
+    border: 1px dashed var(--background-modifier-border);
+}
+
+/* fix kanban padding => match space between lists */
+/* 10px is set by the plugin (space between them) */
+.kanban-plugin__board > div {
+	padding-left: 10px !important;
+	padding-right: 10px !important;
+	padding-top: 10px !important;
+}
+
+/* dataview */
+:is(.dataview, .table-view-table) .table-view-th {
+	padding-left: var(--size-4-2);
+	padding-right: var(--size-4-2);
+}
+.markdown-rendered :is(.dataview, .table-view-table) td { font-size: var(--font-text-size); }
+
+/* focus mode */
+.focus-mode .cm-s-obsidian .cm-line:not(.cm-active),
+.focus-mode .cm-s-obsidian div:not(.CodeMirror-activeline) > .CodeMirror-line {
+    opacity: 1 !important;
+    filter: none !important;
+}

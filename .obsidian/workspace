@@ -1,0 +1,225 @@
+{
+  "main": {
+    "id": "098c1950a8c0d162",
+    "type": "split",
+    "children": [
+      {
+        "id": "927a040cbdff56d6",
+        "type": "split",
+        "children": [
+          {
+            "id": "b8ff889c83760618",
+            "type": "split",
+            "dimension": 21.490803484995162,
+            "children": [
+              {
+                "id": "96fbdff6c89168d5",
+                "type": "leaf",
+                "dimension": 74.75308641975309,
+                "state": {
+                  "type": "kanban",
+                  "state": {
+                    "file": "Doc-Site/Doc-Site Kanban.md"
+                  }
+                }
+              },
+              {
+                "id": "e2cdb0289aee7bd7",
+                "type": "leaf",
+                "dimension": 25.246913580246915,
+                "state": {
+                  "type": "todo",
+                  "state": {}
+                }
+              }
+            ],
+            "direction": "vertical"
+          },
+          {
+            "id": "0c973e80f335bfcb",
+            "type": "split",
+            "dimension": 78.50919651500485,
+            "children": [
+              {
+                "id": "54db2e5ff1325bb0",
+                "type": "leaf",
+                "dimension": 49.44444444444444,
+                "state": {
+                  "type": "markdown",
+                  "state": {
+                    "file": "Intro to information retrieval/2. Chapters/Chapter 1 Boolean Retrieval.md",
+                    "mode": "preview",
+                    "source": false
+                  }
+                }
+              },
+              {
+                "id": "607576391c3cd7ab",
+                "type": "leaf",
+                "dimension": 50.55555555555556,
+                "state": {
+                  "type": "markdown",
+                  "state": {
+                    "file": "Intro to information retrieval/2. Chapters/Chapter 1 Boolean Retrieval.md",
+                    "mode": "source",
+                    "source": false
+                  }
+                }
+              }
+            ],
+            "direction": "vertical"
+          }
+        ],
+        "direction": "horizontal"
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "cb91d4878424e066",
+    "type": "split",
+    "children": [
+      {
+        "id": "f2d5be3938846cfc",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "c4d487f740619d0a",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {}
+            }
+          },
+          {
+            "id": "4ee16438aa56279a",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "tag:#algorithm",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "079c11d69a0a244e",
+            "type": "leaf",
+            "state": {
+              "type": "starred",
+              "state": {}
+            }
+          }
+        ]
+      },
+      {
+        "id": "04f7d0a0d2b80421",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "9212dc87a1ec54f7",
+            "type": "leaf",
+            "state": {
+              "type": "graph",
+              "state": {}
+            }
+          },
+          {
+            "id": "b3895eea18b1c5a3",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "Intro to information retrieval/2. Chapters/Chapter 1 Boolean Retrieval.md"
+              }
+            }
+          }
+        ],
+        "currentTab": 1
+      }
+    ],
+    "direction": "horizontal",
+    "width": 240.5
+  },
+  "right": {
+    "id": "1640fe509e1f4747",
+    "type": "split",
+    "children": [
+      {
+        "id": "b44076eacff3019c",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "21a93678b4706c5b",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "Intro to information retrieval/2. Chapters/Chapter 1 Boolean Retrieval.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": true,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "8db706723d5399e2",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "Intro to information retrieval/2. Chapters/Chapter 1 Boolean Retrieval.md",
+                "linksCollapsed": true,
+                "unlinkedCollapsed": false
+              }
+            }
+          },
+          {
+            "id": "8db4aad72db4840b",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              }
+            }
+          },
+          {
+            "id": "f61497d05845d22b",
+            "type": "leaf",
+            "state": {
+              "type": "advanced-tables-toolbar",
+              "state": {}
+            }
+          }
+        ],
+        "currentTab": 3
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "active": "54db2e5ff1325bb0",
+  "lastOpenFiles": [
+    "Intro to information retrieval/1. Vocab/Inverted Index.md",
+    "Intro to information retrieval/2. Chapters/Chapter 1 Boolean Retrieval.md",
+    "Intro to information retrieval/2. Chapters/Figures/Chapter 1 Figure 1.4.md",
+    "Intro to information retrieval/1. Vocab/docID.md",
+    "Doc-Site/Doc-Site Kanban.md",
+    "ToDo.md",
+    "Math/Graph Theory/2. Ideas/Dijkstra’s Shortest Path Algorithm.md",
+    "Math/Graph Theory/3. Chapters/Chap 1 Drawing Graphs.md",
+    "Intro to information retrieval/1. Vocab/Clustering.md",
+    "Intro to information retrieval/Index.md"
+  ]
+}

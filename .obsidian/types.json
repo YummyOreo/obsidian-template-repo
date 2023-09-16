@@ -1,0 +1,18 @@
+{
+  "types": {
+    "aliases": "aliases",
+    "cssclasses": "multitext",
+    "tags": "tags",
+    "publish": "checkbox",
+    "date_last_spoken": "date",
+    "follow_up": "checkbox",
+    "family": "checkbox",
+    "contact": "multitext",
+    "pronouns": "multitext",
+    "week_start": "date",
+    "week_end": "date",
+    "daily_notes": "multitext",
+    "birth_date": "date",
+    "recommend": "checkbox"
+  }
+}
