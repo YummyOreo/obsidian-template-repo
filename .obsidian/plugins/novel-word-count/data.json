@@ -114,6 +114,22 @@
       "modifiedDate": 1694741210186,
       "sizeInBytes": 150
     },
+    "Templates/Index Template.md": {
+      "isDirectory": false,
+      "noteCount": 1,
+      "wordCount": 6,
+      "wordCountTowardGoal": 0,
+      "wordGoal": null,
+      "pageCount": 0.02,
+      "characterCount": 54,
+      "nonWhitespaceCharacterCount": 48,
+      "linkCount": 0,
+      "embedCount": 0,
+      "aliases": null,
+      "createdDate": 1694896571953,
+      "modifiedDate": 1689202063527,
+      "sizeInBytes": 105
+    },
     "Templates/Literature Template.md": {
       "isDirectory": false,
       "noteCount": 1,
@@ -131,22 +147,6 @@
       "createdDate": 1694896571954,
       "modifiedDate": 1693526389908,
       "sizeInBytes": 588
-    },
-    "Templates/Index Template.md": {
-      "isDirectory": false,
-      "noteCount": 1,
-      "wordCount": 6,
-      "wordCountTowardGoal": 0,
-      "wordGoal": null,
-      "pageCount": 0.02,
-      "characterCount": 54,
-      "nonWhitespaceCharacterCount": 48,
-      "linkCount": 0,
-      "embedCount": 0,
-      "aliases": null,
-      "createdDate": 1694896571953,
-      "modifiedDate": 1689202063527,
-      "sizeInBytes": 105
     },
     "Templates/homework.js": {
       "isDirectory": false,
@@ -195,6 +195,22 @@
       "createdDate": 1694896571950,
       "modifiedDate": 1694864866177,
       "sizeInBytes": 371
+    },
+    "Notes/whiteboard.excalidraw.md": {
+      "isDirectory": false,
+      "noteCount": 1,
+      "wordCount": 0,
+      "wordCountTowardGoal": 0,
+      "wordGoal": 0,
+      "pageCount": 0,
+      "characterCount": 0,
+      "nonWhitespaceCharacterCount": 0,
+      "linkCount": 0,
+      "embedCount": 0,
+      "aliases": [],
+      "createdDate": 1694896695795,
+      "modifiedDate": 1694896696102,
+      "sizeInBytes": 377
     },
     "Indexes/School Index.md": {
       "isDirectory": false,
@@ -259,22 +275,6 @@
       "createdDate": 1694896564437,
       "modifiedDate": 1694269151210,
       "sizeInBytes": 2483
-    },
-    "Notes/whiteboard.excalidraw.md": {
-      "isDirectory": false,
-      "noteCount": 1,
-      "wordCount": 0,
-      "wordCountTowardGoal": 0,
-      "wordGoal": 0,
-      "pageCount": 0,
-      "characterCount": 0,
-      "nonWhitespaceCharacterCount": 0,
-      "linkCount": 0,
-      "embedCount": 0,
-      "aliases": [],
-      "createdDate": 1694896695795,
-      "modifiedDate": 1694896696102,
-      "sizeInBytes": 377
     }
   }
 }

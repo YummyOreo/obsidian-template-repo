@@ -294,17 +294,18 @@
       "templater-obsidian:Templater": false,
       "table-editor-obsidian:Advanced Tables Toolbar": false,
       "obsidian-book-search-plugin:Create new book note": false,
-      "periodic-notes:Open today": false,
       "homepage:Open homepage": false,
       "obsidian-advanced-slides:Show Slide Preview": false,
       "obsidian-5e-statblocks:Open Creature Pane": false,
-      "obsidian-excalidraw-plugin:Create new drawing": false
+      "obsidian-excalidraw-plugin:Create new drawing": false,
+      "periodic-notes:Open today": false
     }
   },
   "active": "bedb9b95a55bbd69",
   "lastOpenFiles": [
-    "excalibrain.md",
+    "Daily Notes/2023-09-16.md",
     "Index.md",
+    "excalibrain.md",
     "Indexes/School Index.md",
     "Indexes/Writing Index.md",
     "Indexes/Ultimate Frisbee Index.md",
@@ -328,7 +329,6 @@
     "Notes/protein-function.md",
     "Notes/biology - protein - shape.md",
     "Notes/chemical-properties-of-a-protein.md",
-    "Notes/parts-of-a-protein.md",
     "Blogs & Writings/Untitled",
     "Pictures/How to read pt 2.png",
     "Blogs & Writings/A review of allergies",
